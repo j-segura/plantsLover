@@ -1,0 +1,346 @@
+.carousel_ img {
+    height: 100vh !important;
+    position: relative;
+}
+
+.slider_info {
+    width: 60%;
+}
+
+.imagen_carusel {
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 8rem;
+}
+
+.imagen_carusel h1 {
+    color: rgb(33, 33, 33);
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.imagen_carusel p {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.imagen_carusel a {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 5px 20px;
+    background: rgb(52, 52, 52);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.imagen_carusel a:hover {
+    color: #fff !important;
+    background: rgb(60, 60, 60);
+}
+
+.img_1 {
+    background-image: url('../img/slider1.jpg') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img_2 {
+    background-image: url('../img/slider2.jpg') !important;
+}
+
+.img_3 {
+    background-image: url('../img/slider3.jpg') !important;
+}
+
+
+@media(max-width: 1012px) {
+    .slider_info {
+        width: 100%;
+    }
+
+    .imagen_carusel {
+        padding: 4rem;
+    }
+
+    .img_1 {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('../img/slider1.jpg') !important;
+    }
+
+    .img_2 {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('../img/slider2.jpg') !important;
+    }
+
+    .img_3 {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('../img/slider3.jpg') !important;
+    }
+}
+
+@media(max-width: 600px) {
+    .imagen_carusel {
+        padding: 2rem;
+    }
+}
+
+hr {
+    width: 90%;
+    margin: auto !important;
+    color: rgb(40, 105, 41) !important;
+    margin-top: 2rem !important;
+}
+
+/* NOVEDADES------------------ */
+
+#nueva_categoria {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem 5rem;
+}
+
+#nueva_categoria .banner {
+    flex: 1 1 20rem;
+    height: 15rem;
+    border-radius: 10px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    overflow: hidden;
+    position: relative;
+}
+
+#nueva_categoria .banner .content {
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    transform: translateY(-50%);
+}
+
+#nueva_categoria .banner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+#nueva_categoria .banner .content span {
+    color: #666;
+    font-size: 1rem;
+}
+
+#nueva_categoria .banner .content h3 {
+    color: #333;
+    font-size: 2rem;
+}
+
+#nueva_categoria .banner .content a {
+    border: 1px solid #111;
+    padding: 3px 20px;
+    border-radius: 4px;
+}
+
+#nueva_categoria .banner .content a:hover {
+    background: #222;
+    color: #fff !important;
+}
+
+#nueva_categoria .banner:hover img {
+    transform: scale(1.2);
+}
+
+@media(max-width: 1012px) {
+    #nueva_categoria {
+        padding: 2rem 0.8rem;
+    }
+}
+
+@media(max-width: 800px) {
+    #nueva_categoria {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* categorias ----------------*/
+
+#categorias {
+    width: 88%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.heading {
+    color: #222;
+    font-size: 2rem;
+    padding-left: 10px;
+    border-left: 4px solid rgb(103, 225, 106);
+    margin-bottom: 2rem;
+}
+
+#categorias .box {
+    position: relative;
+    width: 250px;
+    height: 18rem;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 0 20px 10px 20px;
+    margin-bottom: 20px !important;
+}
+
+#categorias .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#categorias .box .content {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    transition: 0.2s;
+    border-radius: 5px;
+}
+
+/* #categorias .box:hover .content {
+    bottom: 0;
+} */
+
+#categorias .box .content h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin: 0 !important;
+}
+
+#categorias .box .content .btn {
+    padding: 0 !important;
+    margin-bottom: 10px;
+    transition: 0.05s;
+} 
+
+#categorias .box .content .btn:hover {
+    border: none;
+
+} 
+
+@media(max-width: 1012px) {
+    #categorias {
+        width: 96%;
+    }
+}
+
+/* Nuevos Productos -------------------*/
+
+#new_plants {
+    width: 88%;
+    margin: auto;
+    margin-bottom: 2rem;
+    height: auto;
+}
+
+.plants_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.plant_box {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: auto;
+    margin: 20px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+
+.plant_box:hover {
+    transform: translateY(-10px);
+    transition: all ease 0.2s;
+}
+
+.plant_img {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.plant_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.plant_img span {
+    position: absolute;
+    top: 10px;
+    left: -5px;
+    background-color: rgb(245, 56, 56);
+    color: #fff;
+    padding: 0px 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.info_plant {
+    width: 100%;
+    height: 200px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.info_plant h2 {
+    font-size: 1.5rem;
+    margin: 0 !important;
+    font-weight: 500;
+}
+
+.info_plant h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #78e08f;
+}
+
+.info_plant p {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.info_plant a {
+    text-decoration: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0px 20px; 
+    border-radius: 5px;
+}
+
+.info_plant a:hover {
+    background: rgb(221, 221, 221);
+    color: #222 !important;
+}
+
+@media(max-width: 850px){
+    .plant_box {
+        flex-direction: row;
+        width: 90%;
+        height: 300px;
+    }
+
+    .info_plant {
+        height: 100% !important;
+    }
+}
