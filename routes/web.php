@@ -13,13 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::view('/', 'home')->name('home');
 Route::view('/tienda', 'tienda')->name('tienda');
 Route::view('/nosotros', 'nosotros')->name('nosotros');
+
+
 
 Route::middleware([
     'auth:sanctum',
