@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PrincipalContorller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'home')->name('home');
-Route::view('/tienda', 'tienda')->name('tienda');
+
+Route::get('/', [PrincipalContorller::class, 'index'])->name('home');
+Route::get('tienda', [PrincipalContorller::class, 'tienda'])->name('tienda');
+Route::get('producto/{producto}', [PrincipalContorller::class, 'show'])->name('show');
+Route::get('categoria/{categoria}', [PrincipalContorller::class, 'categoria'])->name('plants.categoria');
+Route::get('tamaño/{tamaño}', [PrincipalContorller::class, 'tamaño'])->name('plants.tamaño');
+
 Route::view('/nosotros', 'nosotros')->name('nosotros');
 
 

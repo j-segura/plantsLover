@@ -20,16 +20,15 @@ class PlantFactory extends Factory
     {
         return [
             'name' => $this->faker->word(),
-            'description' => $this->faker->text(200),
+            'description' => $this->faker->text(350),
+            'extract' => $this->faker->text(50),
             'foto' => $this->faker->randomElement([
-                'cat1.jpg',
-                'cat2.jpg',
-                'cat3.jpg',
-                'cat4.jpg',
-            ]),
-            'banner' => $this->faker->randomElement([
-                'banner1.jpg',
-                'banner2.jpg',
+                'product1.jpg',
+                'product2.jpg',
+                'product3.jpg',
+                'product4.jpg',
+                'product5.jpg',
+                'product6.jpg',
             ]),
             'precio' => $this->faker->randomElement([
                 '10000',

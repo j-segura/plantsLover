@@ -17,6 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('name', 45);
             $table->string('name_small', 45);
+            $table->string('foto');
+            $table->string('banner');
             $table->timestamps();
         });
     }

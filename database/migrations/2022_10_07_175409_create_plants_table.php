@@ -16,9 +16,9 @@ return new class extends Migration
         Schema::create('plants', function (Blueprint $table) {
             $table->id();
             $table->string('name', 45);
-            $table->string('description');
+            $table->longText('description');
+            $table->string('extract');
             $table->string('foto');
-            $table->string('banner');
             $table->string('precio');
 
             $table->unsignedBigInteger('categoria_id');
