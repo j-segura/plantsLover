@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call(CategoriaSeeder::class);
+        $this->call(UserSeeder::class);
         $this->call(TamañoSeeder::class);
         Plant::factory(50)->create();
     }
