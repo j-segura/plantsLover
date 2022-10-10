@@ -3,7 +3,7 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>Listado de tamaños</h1>
+    <h1>Listado de categorias</h1>
 @stop
 
 @section('content')
@@ -17,28 +17,32 @@
     <div class="card">
         <div class="card-body">
             <div class="card-header pl-0">
-                <a href="{{ route('admin.tamaños.create') }}" class="btn btn-secondary">Agregar nuevo tamaño</a>
+                <a href="{{ route('admin.categorias.create') }}" class="btn btn-secondary">Agregar nueva categoria</a>
             </div>
 
             <table class="table table-striped">
                 <thead>
                     <tr>
                         <th>ID</th>
+                        <th>Imagen</th>
                         <th>Nombre</th>
                         <th colspan="2"></th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($tamaños as $tamaño)
+                    @foreach ($categorias as $categoria)
                         <tr>
-                            <td>{{ $tamaño->id }}</td>
-                            <td>{{ $tamaño->name }}</td>
+                            <td>{{ $categoria->id }}</td>
+                            <td>
+                                <img src="/img/{{ $categoria->foto }}" class="img_foto_admin">
+                            </td>
+                            <td>{{ $categoria->name }}</td>
                             <td width="10px">
-                                <a href="{{ route('admin.tamaños.edit', $tamaño) }}"
+                                <a href="{{ route('admin.categorias.edit', $categoria) }}"
                                     class="btn btn-primary btn-sm">Editar</a>
                             </td>
                             <td width="10px">
-                                <form action="{{ route('admin.tamaños.destroy', $tamaño) }}" method="POST">
+                                <form action="{{ route('admin.categorias.destroy', $categoria) }}" method="POST">
                                     @csrf
                                     @method('delete')
 
@@ -55,3 +59,11 @@
         </div>
     </div>
 @stop
+
+<style>
+    .img_foto_admin {
+        width: 150px;
+        height: 190px;
+        object-fit: cover;
+    }
+</style>

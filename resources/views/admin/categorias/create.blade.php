@@ -3,26 +3,20 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>Actualizar tamaño</h1>
+    <h1>Crear una nueva categoria</h1>
 @stop
 
 @section('content')
-    @if (session('info'))
-        <div class="alert alert-success">
-            <strong>{{ session('info') }}</strong>
-        </div>
-    @endif
-
     <div class="card">
         <div class="card-body">
-            {!! Form::model($tamaño, [
-                'route' => ['admin.tamaños.update', $tamaño],
-                'method' => 'put',
+            {!! Form::open([
+                'route' => 'admin.categorias.store',
+                'enctype' => 'multipart/form-data'
             ]) !!}
 
-            @include('admin.tamaños.partials.form')
+            @include('admin.categorias.partials.form')
 
-            {!! Form::submit('Actualizar tamaño', [
+            {!! Form::submit('Crear categoria', [
                 'class' => 'btn btn-primary',
             ]) !!}
             {!! Form::close() !!}

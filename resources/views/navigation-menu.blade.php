@@ -33,9 +33,13 @@ $nav_links = [
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 lg:-my-px lg:ml-10 lg:flex">
-                    <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
-                    </x-jet-nav-link>
+
+                    @auth
+                        <x-jet-nav-link href="{{ route('admin.home') }}" :active="request()->routeIs('admin.home')">
+                            Administracion
+                        </x-jet-nav-link>
+                    @endauth
+
                     @foreach ($nav_links as $nav_link)
                         <x-jet-nav-link href="{{ $nav_link['route'] }}" :active="$nav_link['active']">
                             {{ $nav_link['name'] }}
@@ -186,8 +190,8 @@ $nav_links = [
     <div :class="{ 'block': open, 'hidden': !open }" class="hidden lg:hidden">
         <div class="pt-2 pb-3 space-y-1">
             @auth
-                <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                    {{ __('Dashboard') }}
+                <x-jet-responsive-nav-link href="{{ route('admin.home') }}" :active="request()->routeIs('admin.home')">
+                    Administracion
                 </x-jet-responsive-nav-link>
             @endauth
             @foreach ($nav_links as $nav_link)

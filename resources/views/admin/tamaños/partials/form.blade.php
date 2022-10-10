@@ -2,8 +2,12 @@
     {!! Form::label('name', 'Nombre:') !!}
     {!! Form::text('name', null, [
         'class' => 'form-control',
-        'placeholder' => 'Ingrese el nombre del nuevo tamaño ...'
+        'placeholder' => 'Ingrese el nombre del nuevo tamaño ...',
     ]) !!}
+
+    @error('name')
+        <small class="text-danger">{{ $message }}</small>
+    @enderror
 </div>
 
 <div class="form-group">
@@ -11,6 +15,10 @@
     {!! Form::text('slug', null, [
         'class' => 'form-control',
         'placeholder' => 'Ingrese el slug del nuevo tamaño ...',
-        'readonly'
+        'readonly',
     ]) !!}
+
+    @error('slug')
+        <small class="text-danger">{{ $message }}</small>
+    @enderror
 </div>
