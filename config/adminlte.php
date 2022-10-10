@@ -313,8 +313,8 @@ return [
         ],
         ['header' => 'TABLAS'],
         [
-            'text' => 'Categorias',
-            'url'  => 'admin/settings',
+            'text' => 'Tamaños',
+            'route'  => 'admin.tamaños.index',
             'icon' => 'fab fa-fw fa-buffer',
         ],
         [

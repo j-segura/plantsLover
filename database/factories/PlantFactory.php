@@ -5,6 +5,7 @@ namespace Database\Factories;
 use App\Models\Categoria;
 use App\Models\Tamaño;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Plant>
@@ -18,8 +19,11 @@ class PlantFactory extends Factory
      */
     public function definition()
     {
+        $name = $this->faker->word();
+
         return [
-            'name' => $this->faker->word(),
+            'name' => $name,
+            'slug' => Str::slug($name),
             'description' => $this->faker->text(350),
             'extract' => $this->faker->text(50),
             'foto' => $this->faker->randomElement([

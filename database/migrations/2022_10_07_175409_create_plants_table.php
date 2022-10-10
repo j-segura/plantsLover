@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('plants', function (Blueprint $table) {
             $table->id();
             $table->string('name', 45);
+            $table->string('slug');
             $table->longText('description');
             $table->string('extract');
             $table->string('foto');

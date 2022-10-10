@@ -10,6 +10,8 @@ class Categoria extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
+
     /* relaciones uno a muchos */
 
     public function plants(){

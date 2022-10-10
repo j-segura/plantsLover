@@ -10,7 +10,7 @@
                     <div class="slider_info">
                         <span>Hasta 75% de descuento</span>
                         <h1>Plantas Hacen Feliz A La Gente</h1>
-                        <a href="">comprar ahora</a>
+                        <a href="#nueva_categoria">comprar ahora</a>
                     </div>
                 </div>
             </div>
@@ -19,7 +19,7 @@
                     <div class="slider_info">
                         <span>Hasta 45% de descuento</span>
                         <h1>Planta Gran Oferta Especial</h1>
-                        <a href="">comprar ahora</a>
+                        <a href="#nueva_categoria">comprar ahora</a>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                     <div class="slider_info">
                         <span>Hasta 65% de descuento</span>
                         <h1>Decora Tu Casa Ahora</h1>
-                        <a href="">comprar ahora</a>
+                        <a href="#nueva_categoria">comprar ahora</a>
                     </div>
                 </div>
             </div>
