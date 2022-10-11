@@ -322,6 +322,11 @@ return [
             'route'  => 'admin.categorias.index',
             'icon' => 'fab fa-fw fa-buffer',
         ],
+        [
+            'text' => 'Plantas',
+            'route'  => 'admin.plants.index',
+            'icon' => 'fab fa-fw fa-buffer',
+        ],
     ],
 
     /*
