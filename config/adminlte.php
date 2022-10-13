@@ -316,16 +316,19 @@ return [
             'text' => 'Tamaños',
             'route'  => 'admin.tamaños.index',
             'icon' => 'fab fa-fw fa-buffer',
+            'active' => ['admin/tamaños*'],
         ],
         [
             'text' => 'Categorias',
             'route'  => 'admin.categorias.index',
             'icon' => 'fab fa-fw fa-buffer',
+            'active' => ['admin/categorias*'],
         ],
         [
             'text' => 'Plantas',
             'route'  => 'admin.plants.index',
             'icon' => 'fab fa-fw fa-buffer',
+            'active' => ['admin/plants*'],
         ],
     ],
 

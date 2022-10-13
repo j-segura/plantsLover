@@ -11,6 +11,11 @@ class Tamaño extends Model
 
     protected $guarded = [];
 
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
     /* relaciones uno a muchos */
 
     public function plants(){
