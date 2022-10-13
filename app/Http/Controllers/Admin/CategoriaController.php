@@ -63,7 +63,7 @@ class CategoriaController extends Controller
 
         $categoria = Categoria::create($categoria);
 
-        return redirect()->route('admin.categorias.edit', compact('categoria'));
+        return redirect()->route('admin.categorias.edit', compact('categoria'))->with('info', 'La categoria se creo con exito!');
     }
 
     /**

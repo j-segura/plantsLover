@@ -83,7 +83,7 @@
 
 
 <div class="form-group">
-    {!! Form::label('tamaño_id', 'Categoria:') !!}
+    {!! Form::label('tamaño_id', 'Tamaño:') !!}
     {!! Form::select('tamaño_id', $tamaños, null, [
         'class' => 'form-control',
     ]) !!}
